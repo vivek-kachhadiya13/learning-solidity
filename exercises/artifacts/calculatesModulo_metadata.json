@@ -1,0 +1,69 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "a",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "b",
+						"type": "uint256"
+					}
+				],
+				"name": "calcModulo",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"exercises/modulo-exercise.sol": "calculatesModulo"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"exercises/modulo-exercise.sol": {
+			"keccak256": "0x74844c1f3a8c2d256c361f91bc3014c157160d4e96db49a60355eed36022b2d6",
+			"urls": [
+				"bzz-raw://3aa7bac7ac139544f2d8b722f6b494696632a3501efb714c4fc93eefae62f93f",
+				"dweb:/ipfs/QmPoH4F9v8BVDR1yicGr7r5TtvgQMMJwo7wGFPaHEaGcWg"
+			]
+		}
+	},
+	"version": 1
+}
