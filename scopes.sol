@@ -7,7 +7,7 @@ pragma solidity >= 0.7.0 < 0.9.0;
 // Internal = Called only within the contract OR other contracts that inherit the smart contract 
 // Internal is slightly less restrictive than public
 
-// External = You can only call the function outside the contract not from other functions within 
+// External = You can only call the function outside the contract not from other functions within the contract
 
 // Public = You can call the function from outside the smart contract as well inside the smart contract
 
@@ -17,13 +17,24 @@ pragma solidity >= 0.7.0 < 0.9.0;
 
 contract Scopes {
     uint public data = 10;
+    uint internal data1 = 20;
+    uint private data2 = 30;
 
-    function X() public returns(uint) {
-        data = 25;
-        return data;
+    function X() external pure returns(uint) {
+        uint newData = 25;
+        return newData;
     }
 
-    function Y() public view returns(uint) {
-        return data;
+    function Y() internal view returns(uint) {
+        return data1;
+    }
+}
+
+contract Scopes2 is Scopes {
+    function X1() public view returns(uint) {
+        return data1;
+    }
+    function Y1() public view returns(uint) {
+        return Y();
     }
 }
